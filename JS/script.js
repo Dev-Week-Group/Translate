@@ -40,6 +40,15 @@ editorElement.addEventListener('exported', function (evt) {
 convertElement.addEventListener('click', function () {
   // editorElement.editor.convert();
   console.log( editorElement.editor.model.exports['application/x-latex'])
+  let text = editorElement.editor.model.exports['application/x-latex'];
+  translate.translate( text )
+           .then( res => res.json())
+           .then( res => {
+               let newText = res['data'].translations[0].translatedText;
+               console.log( res['data'].translations[0].translatedText )
+               let childNode = resultElement.firstChild;
+               childNode.innerText = newText;
+           } )
 });
 
 /**
