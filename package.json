@@ -1,0 +1,26 @@
+{
+  "name": "translate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-Week-Group/Translate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-Week-Group/Translate/issues"
+  },
+  "homepage": "https://github.com/Dev-Week-Group/Translate#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "myscript": "^4.1.0",
+    "path": "^0.12.7",
+    "pep": "^1.0.13",
+    "serve-static": "^1.13.1"
+  }
+}
